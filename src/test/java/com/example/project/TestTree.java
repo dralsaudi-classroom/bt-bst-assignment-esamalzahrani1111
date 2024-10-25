@@ -10,7 +10,7 @@ public class TestTree {
    {
       BT<Integer> t = new BT<Integer>();
       assertEquals(0, t.countLeaves());
-     // assertEquals(0, TreeUser.countLeaves(t));
+      assertEquals(0, TreeUser.countLeaves(t));
    }
    @Test
    public void testCountLeaves2()
