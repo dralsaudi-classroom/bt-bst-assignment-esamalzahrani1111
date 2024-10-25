@@ -101,7 +101,7 @@ public class BT<T> {
 	public int countLeaves() {
 		//throw new UnsupportedOperationException("Not supported yet.");
 		// Write the method countLeafs that should return the number of leaf nodes in the tree. A leaf node is a node that has no children.
-		LinkedStack<T> stack = new LinkedStack<T>();
+		LinkedStack<BTNode<T>> stack = new LinkedStack<BTNode<T>>();
 		BTNode<T> temp = root;
 		int leafs=0;
 		if (temp == null)
