@@ -8,19 +8,19 @@ public class TreeUser {
         // input: None. results: if the current node of the binary tree is a leaf then flag is set to true otherwise it is set to false. output: flag.
         // you can't call countLeaves from BT.java
 	    T temp = bt.retrieve();
-	    if(!bt.find(0))
+	    if(!bt.find(Relative.Root))
 		    return 0;
 	    int leftcount = 0;
 	    int rightcount=0;
 	    if(bt.isLeaf())
 		    return 1;
-	    if(bt.find(2)){
+	    if(bt.find(Relative.RightChild)){
 	rightcount = countLeaves(bt);
-		    bt.find(1);
+		    bt.find(Relative.Parent);
 	    }
-	    if(bt.find(3)){
+	    if(bt.find(Relative.LeftChild)){
 		    leftcount = countLeaves(bt);
-		     bt.find(1);
+		     bt.find(Relative.LeftChild);
     }
     return leftcount+rightcount;
     
