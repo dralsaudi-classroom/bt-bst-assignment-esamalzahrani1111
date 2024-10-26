@@ -122,7 +122,7 @@ public class BT<T> {
 				temp = stack.pop();
 		}while (temp != null);
 				return leafs;
-		
+		//
 				}
 	}
 
