@@ -117,6 +117,7 @@ public class BT<T> {
 			else	
 				if(temp.left != null)
 				temp = temp.left;
+					continue;
 				else
 					temp = stack.pop();
 		}while (!stack.empty());
