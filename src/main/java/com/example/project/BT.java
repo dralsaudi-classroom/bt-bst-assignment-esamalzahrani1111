@@ -104,9 +104,11 @@ public class BT<T> {
 		LinkedStack<BTNode<T>> stack = new LinkedStack<BTNode<T>>();
 		BTNode<T> temp = root;
 		int leafs=0;
-		if (temp == null)
+		boolean check = false;
+	if (temp == null)
 			return 0;
 		do {
+			check = false;
 			if (temp.right != null)
 				stack.push(temp.right);
 			if (temp.right == null && temp.left == null) {
@@ -114,15 +116,16 @@ public class BT<T> {
 				if (!stack.empty())
 				temp = stack.pop();
 			}
-			else	
+	else	
 				if(temp.left != null){
+					check = true;
 				temp = temp.left;
-					continue;
-				}
+			}
 				else
 					temp = stack.pop();
-		}while (!stack.empty());
+		}while (check || !stack.empty());
 				return leafs;
+		
 				}
 	}
 
