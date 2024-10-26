@@ -119,7 +119,7 @@ public class BT<T> {
 	else	
 				temp = temp.left;
 			if (temp ==null && !stack.empty())
-				temp = stack.pop
+				temp = stack.pop();
 		}while (temp != null);
 				return leafs;
 		
