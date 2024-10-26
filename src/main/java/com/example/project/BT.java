@@ -57,20 +57,20 @@ public class BT<T> {
 	}
     public boolean find(int rel){
 		switch (rel) {
-		   case 0:	// Easy case
+		   case Root:	// Easy case
 			current = root;
 			return true;
-		   case 1:
+		   case Parent:
 			if(current == root)
                 return false;
 			current = findparent(current, root);
 			return true;
-		   case 2:
+		   case LeftChild:
 			if(current.left == null)
                 return false;
 			current = current.left;
 			return true;
-		   case 3:
+		   case RightChild:
 			if(current.right == null)
                 return false;
 			current = current.right;
