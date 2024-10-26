@@ -55,7 +55,7 @@ public class BT<T> {
 			current = root;
 		}
 	}
-    public boolean find(int rel){
+    public boolean find(Relative rel){
 		switch (rel) {
 		   case Root:	// Easy case
 			current = root;
