@@ -176,7 +176,7 @@ public class BST<T> {
 			temp = temp.left;
 			count++;
 			if (temp.right == null && temp.left== null)
-				temp == stack.pop()
+				temp = stack.pop();
 					count++;
 		}while(!stack.empty());
 		
