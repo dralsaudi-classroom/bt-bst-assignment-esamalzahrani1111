@@ -179,6 +179,6 @@ public class BST<T> {
 				temp = stack.pop();
 					count++;
 		}while(!stack.empty());
-		
+		return count;
 	}
 }
