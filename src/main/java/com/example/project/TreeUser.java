@@ -22,6 +22,9 @@ public class TreeUser {
 		    leftcount = countLeaves(bt);
 		     bt.find(Parent);
     }
-	    return leftcount+rightcount;
+    return leftcount+rightcount;
+    
+    }
+	    
 	
 }
