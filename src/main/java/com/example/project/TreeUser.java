@@ -12,7 +12,7 @@ public class TreeUser {
 	    int leftcount = 0;
 	    int rightcount=0;
 	    if(bt.isLeaf()) {
-		    bt.find(Relative.parent);
+		    bt.find(Relative.Parent);
 		    return 1;
 	    }
 	    if(bt.find(Relative.RightChild)){
