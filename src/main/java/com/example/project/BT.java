@@ -111,12 +111,13 @@ public class BT<T> {
 				stack.push(temp.right);
 			if (temp.right == null && temp.left == null) {
 				leafs++;
-				if (!stack.empty()){
+				
+				if (!stack.empty())
+				{
 				temp = stack.pop();
 					continue;
 				}
-			}
-	else	
+			}	
 				temp = temp.left;
 			if (temp ==null && !stack.empty())
 				temp = stack.pop();
