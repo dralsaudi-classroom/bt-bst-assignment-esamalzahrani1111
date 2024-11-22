@@ -25,7 +25,7 @@ public class TreeUser {
  //    return leftcount+rightcount;
     
  //    }
-	    bt.find(Relative.root);
+	    bt.find(Relative.Root);
 	    if(bt.empty())
 		    return 0;
 	    recr(bt);
@@ -33,7 +33,7 @@ public class TreeUser {
 	
 }
 
-public static int recr (BT<T> bt){
+public static <T> int recr (BT<T> bt){
 	int Leftnum=0;
 	int Rightnum=0;
 	if (bt.IsLeaf())
