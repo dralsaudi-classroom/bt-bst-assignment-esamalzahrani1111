@@ -109,6 +109,8 @@ public class BT<T> {
 
 	if (temp == null)
 			return 0;
+	if (temp.right == null && temp.left == null)
+		return 1;
 		do 
 		{
 		if (temp.right != null)
