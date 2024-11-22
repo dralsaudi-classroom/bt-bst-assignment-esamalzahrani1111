@@ -28,7 +28,7 @@ public class TreeUser {
 	    bt.find(Relative.Root);
 	    if(bt.empty())
 		    return 0;
-	    recr(bt);
+	    return recr(bt);
 	    
 	
 }
