@@ -164,7 +164,7 @@ public class BST<T> {
 		
 		findkey(k);
 		do {
-			(current != null)
+			if(current != null)
 				count++;
 			if(current.right != null)
 				stack.push(current.right);
