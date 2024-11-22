@@ -36,7 +36,7 @@ public class TreeUser {
 public static <T> int recr (BT<T> bt){
 	int Leftnum=0;
 	int Rightnum=0;
-	if (bt.IsLeaf())
+	if (bt.isLeaf())
 		return 1;
 	if(bt.find(Relative.LeftChild)){
 		Leftnum = recr(bt);
