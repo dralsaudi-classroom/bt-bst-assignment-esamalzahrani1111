@@ -25,8 +25,33 @@ public class TreeUser {
  //    return leftcount+rightcount;
     
  //    }
-	    BTNode<T> temp = bt.current;
-	    return 1;
+	    bt.find(Relative.root);
+	    if(bt.empty())
+		    return 0;
+	    recr(bt);
 	    
 	
-}}
+}
+
+public static int recr (BT<T> bt){
+	int Leftnum=0;
+	int Rightnum=0;
+	if (bt.IsLeaf())
+		return 1;
+	if(bt.find(Relative.LeftChild)){
+		Leftnum = recr(bt);
+		bt.find(Relative.Parent);
+	}
+	if(bt.find(Relative.RightChild){
+		Rightnum = recr(bt);
+		bt.find(Relative.Parent);
+	}
+	return Leftnum + Rightnum;
+	}
+	
+	
+		
+		
+	
+
+}
