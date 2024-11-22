@@ -42,7 +42,7 @@ public static int recr (BT<T> bt){
 		Leftnum = recr(bt);
 		bt.find(Relative.Parent);
 	}
-	if(bt.find(Relative.RightChild){
+	if(bt.find(Relative.RightChild)){
 		Rightnum = recr(bt);
 		bt.find(Relative.Parent);
 	}
