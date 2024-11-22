@@ -109,10 +109,11 @@ public class BT<T> {
 
 	if (temp == null)
 			return 0;
-	if (temp.right == null && temp.left == null)
-		leafs++;
-		do 
+	
+	do 
 		{
+		if (temp.right == null && temp.left == null)
+		leafs++;
 		if (temp.right != null)
 		stack.push(temp.right);
 
