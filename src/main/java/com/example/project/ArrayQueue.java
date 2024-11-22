@@ -6,7 +6,7 @@ public class ArrayQueue<T> implements Queue<T> {
     private int head, tail;
     private T[] nodes;
 
-    /** Creates a new instance of ArrayQueue */
+    /** Creates a new instance of ArrayQueue *///
     public ArrayQueue(int n) {
         maxsize = n;
         size = 0;
