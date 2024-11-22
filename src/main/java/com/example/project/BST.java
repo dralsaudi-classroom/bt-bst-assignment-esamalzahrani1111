@@ -162,7 +162,7 @@ public class BST<T> {
 		int count=0;
 		LinkedStack<BSTNode<T>> stack = new LinkedStack<BSTNode<T>>();
 		
-		findkey(k)
+		findkey(k);
 		do {
 			(temp != null)
 				count++;
