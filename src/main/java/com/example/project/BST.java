@@ -158,27 +158,22 @@ public class BST<T> {
 		// Write the member method countNodesIn member of the class BST that returns the number of nodes in the subtree rooted at
 		// the node with key k. Assume that k exists. You are not allowed to call any of the BST methods.
 		
-		BSTNode<T> temp = root;
+		
 		int count=0;
 		LinkedStack<BSTNode<T>> stack = new LinkedStack<BSTNode<T>>();
 		
-		while(temp.key != k)
-			{
-				if(temp.key > k)
-					temp = temp.left;
-				else
-					temp = temp.right;
-			}
+		findkey(k)
 		do {
+			(temp != null)
+				count++;
 			if(temp.right != null)
 				stack.push(temp.right);
-			if(temp.right != null)
+			
 			temp = temp.left;
-			count++;
-			if (temp.right == null && temp.left== null)
+			if (temp == null)
+				if(!stack.empty())
 				temp = stack.pop();
-					count++;
-		}while(!stack.empty());
+		}while(temp != null);
 		return count;
 	}
 }
