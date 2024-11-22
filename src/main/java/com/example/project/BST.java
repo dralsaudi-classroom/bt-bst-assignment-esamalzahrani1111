@@ -164,16 +164,16 @@ public class BST<T> {
 		
 		findkey(k);
 		do {
-			(temp != null)
+			(current != null)
 				count++;
-			if(temp.right != null)
-				stack.push(temp.right);
+			if(current.right != null)
+				stack.push(current.right);
 			
-			temp = temp.left;
-			if (temp == null)
+			current = current.left;
+			if (current == null)
 				if(!stack.empty())
-				temp = stack.pop();
-		}while(temp != null);
+				current = stack.pop();
+		}while(current != null);
 		return count;
 	}
 }
